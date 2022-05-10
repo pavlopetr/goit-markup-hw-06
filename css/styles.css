@@ -18,6 +18,7 @@ img{
 }
 h1,h2,h3,h4,p,ul {
      margin: 0px;
+     padding-left: 0px;
 }
 
 
@@ -191,6 +192,7 @@ fill: var(--accent-color);
 /* hero */
 .hero-block {
     display: flow-root;
+    
 }
 .hero {
     padding-top: 200px;
@@ -201,6 +203,7 @@ fill: var(--accent-color);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
+    max-width: 1600px;
 }   
 
 .hero-title {
@@ -559,6 +562,8 @@ a {
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: #F5F4FA;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 .comand-cards{
 padding-top: 30px;
@@ -590,6 +595,8 @@ background-color: #ffffff;
 .footer{
     padding-top: 60px;
     padding-bottom: 60px;
+    width: 1600px;
+    margin: 0 auto;
 }
 
 .address{
@@ -860,7 +867,23 @@ transform: translateY(0);
     fill: #212121;
   }
  
-  
+.modal-btn{
+    margin: 0 auto;
+
+    border-radius: 4px;
+    padding: 10px 32px;
+
+    color: var(--hero-title-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    
+}
 
 
 
@@ -869,14 +892,17 @@ transform: translateY(0);
     display: block;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
    
 }
 .subscribe-icon{
     text-align: center;
+   margin-left: 10px;
     
 }
 .subscribe-btn{
-    margin-top: 30px;
+    display: flex;
+    align-items: center;
     margin-left: 0px;
     margin-right: auto;
    
@@ -895,13 +921,15 @@ transform: translateY(0);
     transition: background-color,var(--transition);
 }
 .subscribe-form{
- 
+ display: flex;
+ align-items: center;
 }
 .sub-text{
     text-transform: uppercase;
     font-weight: 700;
     color: #ffffff;
-    font-size: 14px;   
+    font-size: 14px;  
+    margin-bottom: 20px; 
 }
 .subscribe-input{
     padding-left: 15px;
