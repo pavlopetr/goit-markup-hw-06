@@ -10,6 +10,7 @@
 --hero-title-color: #ffffff;
 --background-hero-color: #2F303A;
 --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+--from-modal-color: #2196F3;
 }
 img{
     display: block;
@@ -255,6 +256,7 @@ fill: var(--accent-color);
     background-color: #F5F4FA;
     max-width: 270px;
     margin-bottom: 30px;
+    border-radius: 4px;
 }
 
 .title {
@@ -371,6 +373,9 @@ fill: var(--accent-color);
 /* футер */
 footer {
     background-color: var(--background-hero-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
 }
 .logo-footer {
     color: var(--hero-title-color);
@@ -382,6 +387,10 @@ footer {
 
 .icons-footer{
     fill: var(--hero-title-color);   
+}
+.footer-content{
+    display: block;
+    padding-bottom: 20px;
 }
 
 /* адреса */
@@ -566,12 +575,10 @@ a {
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: #F5F4FA;
-    max-width: 1600px;
     margin: 0 auto;
 }
 .comand-cards{
 padding-top: 30px;
-
 background-color: #ffffff;
 }
 .comand-bloc{
@@ -592,16 +599,7 @@ background-color: #ffffff;
     text-align: center;
     
 }
-.footer-content{
-    display: block;
-    padding-bottom: 20px;
-}
-.footer{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    width: 1600px;
-    margin: 0 auto;
-}
+
 
 .address{
     display: contents;
@@ -812,6 +810,8 @@ transform: translateY(0);
     width: 30px;
     height: 30px;
     transition: fill var(--transition);
+    cursor: pointer;
+   
 }
 .button-modal:hover .close-svg,
 .button-modal:focus .close-svg{
@@ -820,6 +820,7 @@ transform: translateY(0);
 .close-svg{
     width: 18px;
     height: 18px;
+    cursor: pointer;
     transition: fill var(--transition);
 }
 
@@ -873,21 +874,21 @@ transform: translateY(0);
 
 .form-input:hover,
 .form-input:focus{
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--from-modal-color);
 }
 .form-input:hover + .form-icon,
 .form-input:focus + .form-icon{
-  fill:  var(--accent-color);
+  fill:  var(--from-modal-color);
 }
 
 .form-check-input:hover + .form-checkbox,
 .form-check-input:focus + .form-checkbox{
-border: 1px solid var(--accent-color);
+border: 1px solid var(--from-modal-color);
 
 }
 .form-check-input:checked + .form-checkbox{
-  background-color: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  background-color: var(--from-modal-color);
+  border: 1px solid var(--from-modal-color);
 }
 
   
@@ -993,4 +994,6 @@ border: 1px solid var(--accent-color);
     margin-right: 12px;
     background-color: var(--background-hero-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: var(--hero-title-color);
 }
