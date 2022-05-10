@@ -818,6 +818,7 @@ transform: translateY(0);
      margin-left: 40px;
      margin-right: 40px;
      margin-bottom: 12px;
+     padding-top: 40px;
   }
   
   .form {
@@ -854,7 +855,10 @@ transform: translateY(0);
   .form-icon-wrap {
     position: relative;
   }
-  
+  .form-input-check{
+     
+  }
+
   .form-icon-wrap .form-input {
     padding-left: 40px;
   }
