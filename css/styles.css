@@ -10,7 +10,7 @@
 --hero-title-color: #ffffff;
 --background-hero-color: #2F303A;
 --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
---from-modal-color: #2196F3;
+--from-modal-color: rgba(33, 150, 243, 1);
 }
 img{
     display: block;
